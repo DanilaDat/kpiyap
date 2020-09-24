@@ -24,9 +24,9 @@ public:
 	friend class STO;
 };
 void print(automobile &avto) {
-	cout << "Óíèêàëüíûé íîìåð àâòîìîáèëÿ - " << avto.id << endl;
-	cout << "ÔÈÎ âëàäåëüöà àâòîìîáèëÿ - " << avto.name << endl;
-	cout << "Ïðîáåã àâòîìîáèëÿ - " << avto.mileage << endl;
+	cout << "Ð£Ð½Ð¸ÐºÐ°Ð»ÑŒÐ½Ñ‹Ð¹ Ð½Ð¾Ð¼ÐµÑ€ Ð°Ð²Ñ‚Ð¾Ð¼Ð¾Ð±Ð¸Ð»Ñ  - " << avto.id << endl;
+	cout << "Ð¤Ð˜Ðž Ð²Ð»Ð°Ð´ÐµÐ»ÑŒÑ†Ð° Ð°Ð²Ñ‚Ð¾Ð¼Ð¾Ð±Ð¸Ð»Ñ - " << avto.name << endl;
+	cout << "ÐŸÑ€Ð¾Ð±ÐµÐ³ Ð°Ð²Ñ‚Ð¾Ð¼Ð¾Ð±Ð¸Ð»Ñ - " << avto.mileage << endl;
 }
 class STO {
 private:
@@ -43,10 +43,10 @@ public:
 		bool a = true;
 		do
 		{
-			cout << "Ââåäèòå ïðîáåã àâòîìîáèëÿ - ";
+			cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð¿Ñ€Ð¾Ð±ÐµÐ³ Ð°Ð²Ñ‚Ð¾Ð¼Ð¾Ð±Ð¸Ð»Ñ - ";
 			cin >> Mileage;
 			if (cin.fail())
-				cout << "Ïîâòîðèòå ïîïûòêó" << endl;
+				cout << "ÐŸÐ¾Ð²Ñ‚Ð¾Ñ€Ð¸Ñ‚Ðµ Ð¿Ð¾Ð¿Ñ‹Ñ‚ÐºÑƒ" << endl;
 			else
 				a = false;
 			cin.clear();
@@ -65,16 +65,16 @@ int main() {
 	bool a = true;
 	do
 	{
-		cout << "Ââåäèòå id: ";
+		cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ id: ";
 		cin >> ID;
 		if (cin.fail())
-			cout << "Ïîâòîðèòå ïîïûòêó" << endl;
+			cout << "ÐŸÐ¾Ð²Ñ‚Ð¾Ñ€Ð¸Ñ‚Ðµ Ð¿Ð¾Ð¿Ñ‹Ñ‚ÐºÑƒ" << endl;
 		else
 			a = false;
 		cin.clear();
 		cin.ignore(cin.rdbuf()->in_avail());
 	} while (a);
-	cout << "Ââåäèòå ÔÈÎ âëàäåëüöà àâòîìîáèëÿ - ";
+	cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð¤Ð˜Ðž Ð²Ð»Ð°Ð´ÐµÐ»ÑŒÑ†Ð° Ð°Ð²Ñ‚Ð¾Ð¼Ð¾Ð±Ð¸Ð»Ñ - ";
 	cin >> fio;
 	automobile a1(ID, fio);
 	STO m1;
