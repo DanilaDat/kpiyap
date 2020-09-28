@@ -111,7 +111,7 @@ int main() {
 	cin.ignore(cin.rdbuf()->in_avail());
 		cin >> answ;
 	} while (answ == 1 && i != 10);
-	cout << "Хотите вывести информацию о всех автомобилях? ";
+	cout << "Хотите вывести информацию о всех автомобилях? Да-1";
 	cin.clear();
 	cin.ignore(cin.rdbuf()->in_avail());
 	int answ1;
