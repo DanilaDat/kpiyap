@@ -15,7 +15,7 @@ public:
 	String(int size) {
 		this->size = size;
 		this->string = new char[size];
-		std::cout << "Ââåäèòå ñòðîêó\n";
+		std::cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ ÑÑ‚Ñ€Ð¾ÐºÑƒ\n";
 		for (int i = 0; i < size; i++)
 			std::cin >> this->string[i];
 	}
@@ -63,7 +63,7 @@ int input_int(int min, int max);
 int main() {
 	system("chcp 1251>null");
 	String Str1;
-	std::cout << "Ââåäèòå äëèíó ñòðîêè \n";
+	std::cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð´Ð»Ð¸Ð½Ñƒ ÑÑ‚Ñ€Ð¾ÐºÐ¸ \n";
 	int s = input_int(0, 200);
 	String Str2(s);
 	String Str3(Str2);
@@ -84,8 +84,8 @@ int main() {
 	String* Array = new String[20];
 	int flag = 1, count = -1;
 	while (flag != 0) {
-		std::cout << "Âûáåðèòå äåéñòâèå\n1)Äîáàâèòü ñòðîêó\n2)Èçìåíèòü îïðåäåë¸ííûé ñèìâîë â ñòðîêå\n3)Âûâåñòè îïðåäåëåííûé ñèìâîë â ñòðîêå\n4)Âûâåñòè îïðåäåëåííóþ ñòðîêó\n5)Âûâåñòè âñå ñòðîêè\n";
-		std::cout << "6)Ñðàâíèòü ñòðîêè\n7)Ñîðòèðîâàòü ñòðîêó ïî óáûâàíèþ\n8)Óìåíüøèòü ñòðîêó íà 1\n9)Äîáàâèòü ñèìâîë ê îïðåäåëåííîé ñòðîêå\n10)Äîáàâèòü ñòðîêó ê ñòðîêå\n11)Âûõîä\n";
+		std::cout << "Ð’Ñ‹Ð±ÐµÑ€Ð¸Ñ‚Ðµ Ð´ÐµÐ¹ÑÑ‚Ð²Ð¸Ðµ\n1)Ð”Ð¾Ð±Ð°Ð²Ð¸Ñ‚ÑŒ ÑÑ‚Ñ€Ð¾ÐºÑƒ\n2)Ð˜Ð·Ð¼ÐµÐ½Ð¸Ñ‚ÑŒ Ð¾Ð¿Ñ€ÐµÐ´ÐµÐ»Ñ‘Ð½Ð½Ñ‹Ð¹ ÑÐ¸Ð¼Ð²Ð¾Ð» Ð² ÑÑ‚Ñ€Ð¾ÐºÐµ\n3)Ð’Ñ‹Ð²ÐµÑÑ‚Ð¸ Ð¾Ð¿Ñ€ÐµÐ´ÐµÐ»ÐµÐ½Ð½Ñ‹Ð¹ ÑÐ¸Ð¼Ð²Ð¾Ð» Ð² ÑÑ‚Ñ€Ð¾ÐºÐµ\n4)Ð’Ñ‹Ð²ÐµÑÑ‚Ð¸ Ð¾Ð¿Ñ€ÐµÐ´ÐµÐ»ÐµÐ½Ð½ÑƒÑŽ ÑÑ‚Ñ€Ð¾ÐºÑƒ\n5)Ð’Ñ‹Ð²ÐµÑÑ‚Ð¸ Ð²ÑÐµ ÑÑ‚Ñ€Ð¾ÐºÐ¸\n";
+		std::cout << "6)Ð¡Ñ€Ð°Ð²Ð½Ð¸Ñ‚ÑŒ ÑÑ‚Ñ€Ð¾ÐºÐ¸\n7)Ð¡Ð¾Ñ€Ñ‚Ð¸Ñ€Ð¾Ð²Ð°Ñ‚ÑŒ ÑÑ‚Ñ€Ð¾ÐºÑƒ Ð¿Ð¾ ÑƒÐ±Ñ‹Ð²Ð°Ð½Ð¸ÑŽ\n8)Ð£Ð¼ÐµÐ½ÑŒÑˆÐ¸Ñ‚ÑŒ ÑÑ‚Ñ€Ð¾ÐºÑƒ Ð½Ð° 1\n9)Ð”Ð¾Ð±Ð°Ð²Ð¸Ñ‚ÑŒ ÑÐ¸Ð¼Ð²Ð¾Ð» Ðº Ð¾Ð¿Ñ€ÐµÐ´ÐµÐ»ÐµÐ½Ð½Ð¾Ð¹ ÑÑ‚Ñ€Ð¾ÐºÐµ\n10)Ð”Ð¾Ð±Ð°Ð²Ð¸Ñ‚ÑŒ ÑÑ‚Ñ€Ð¾ÐºÑƒ Ðº ÑÑ‚Ñ€Ð¾ÐºÐµ\n11)Ð’Ñ‹Ñ…Ð¾Ð´\n";
 		int answer = input_int(0, 12);
 		int number = 0; char get_el = 0,symbol=0;
 		int first = 0,second = 0;
@@ -97,104 +97,104 @@ int main() {
 			system("CLS");
 			break;
 		case 2:
-			std::cout << "Ââåäèòå íîìåð ñòðîêè,â êîòîðîé õîòèòå èçìåíèòü ýëåìåíò\n";
+			std::cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð½Ð¾Ð¼ÐµÑ€ ÑÑ‚Ñ€Ð¾ÐºÐ¸,Ð² ÐºÐ¾Ñ‚Ð¾Ñ€Ð¾Ð¹ Ñ…Ð¾Ñ‚Ð¸Ñ‚Ðµ Ð¸Ð·Ð¼ÐµÐ½Ð¸Ñ‚ÑŒ ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚\n";
 			number = input_int(0, count+1);
-			std::cout << "Ñòðîêà " << number << " äî èçìåíåíèé \n";
+			std::cout << "Ð¡Ñ‚Ñ€Ð¾ÐºÐ° " << number << " Ð´Ð¾ Ð¸Ð·Ð¼ÐµÐ½ÐµÐ½Ð¸Ð¹ \n";
 			output(Array[number-1]);
 			edit_element(Array[number-1]);
-			std::cout << "Ñòðîêà ïîñëå èçìåíåíèÿ \n";
+			std::cout << "Ð¡Ñ‚Ñ€Ð¾ÐºÐ° Ð¿Ð¾ÑÐ»Ðµ Ð¸Ð·Ð¼ÐµÐ½ÐµÐ½Ð¸Ñ \n";
 			output(Array[number-1]);
 			system("pause");
 			system("CLS");
 			break;
 		case 3:
-			std::cout << "Ââåäèòå íîìåð ñòðîêè, èç êîòîðîé õîòèòå ïîëó÷èòü ýëåìåíò\n";
+			std::cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð½Ð¾Ð¼ÐµÑ€ ÑÑ‚Ñ€Ð¾ÐºÐ¸, Ð¸Ð· ÐºÐ¾Ñ‚Ð¾Ñ€Ð¾Ð¹ Ñ…Ð¾Ñ‚Ð¸Ñ‚Ðµ Ð¿Ð¾Ð»ÑƒÑ‡Ð¸Ñ‚ÑŒ ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚\n";
 			number = input_int(0, count + 1);
-			std::cout << "Ñòðîêà " << number << " \n";
+			std::cout << "Ð¡Ñ‚Ñ€Ð¾ÐºÐ° " << number << " \n";
 			output(Array[number - 1]);
 			get_el=get_element(Array[number - 1]);
-			std::cout << "Ïîëó÷åííûé ýëåìåíò - " << get_el;
+			std::cout << "ÐŸÐ¾Ð»ÑƒÑ‡ÐµÐ½Ð½Ñ‹Ð¹ ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚ - " << get_el;
 			system("pause");
 			system("CLS");
 			break;
 		case 4:
-			std::cout << "Ââåäèòå íîìåð ñòðîêè, êîòîðóþ õîòèòå âûâåñòè \n";
+			std::cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð½Ð¾Ð¼ÐµÑ€ ÑÑ‚Ñ€Ð¾ÐºÐ¸, ÐºÐ¾Ñ‚Ð¾Ñ€ÑƒÑŽ Ñ…Ð¾Ñ‚Ð¸Ñ‚Ðµ Ð²Ñ‹Ð²ÐµÑÑ‚Ð¸ \n";
 			number = input_int(0, count + 1);
-			std::cout << "Ñòðîêà " << number << " \n";
+			std::cout << "Ð¡Ñ‚Ñ€Ð¾ÐºÐ° " << number << " \n";
 			output(Array[number - 1]);
 			system("pause");
 			system("CLS");
 			break;
 		case 5:
 			for (int i = 0; i < count + 1; i++) {
-				std::cout << "Ñòðîêà " << i + 1<<"\n";
+				std::cout << "Ð¡Ñ‚Ñ€Ð¾ÐºÐ° " << i + 1<<"\n";
 				output(Array[i]);
 			}
 			system("pause");
 			system("CLS");
 			break;
 		case 6:
-			std::cout << "Ââåäèòå íîìåðà ñòðîê,êîòîðûå õîòèòå ñðàâíèòü\nÏåðâàÿ - ";
+			std::cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð½Ð¾Ð¼ÐµÑ€Ð° ÑÑ‚Ñ€Ð¾Ðº,ÐºÐ¾Ñ‚Ð¾Ñ€Ñ‹Ðµ Ñ…Ð¾Ñ‚Ð¸Ñ‚Ðµ ÑÑ€Ð°Ð²Ð½Ð¸Ñ‚ÑŒ\nÐŸÐµÑ€Ð²Ð°Ñ - ";
 			
 			first = input_int(0, count + 1);
-			std::cout << "Âòîðàÿ - ";
+			std::cout << "Ð’Ñ‚Ð¾Ñ€Ð°Ñ - ";
 			second = input_int(0, count + 1);
 			if (first == second)
 			{
-				std::cout << "Íåëüçÿ ïðîâåñòè ñðàâíåíèå,ïîòîìó ÷òî âû âûáðàëè îäíó è òóæå ñòðîêó";
+				std::cout << "ÐÐµÐ»ÑŒÐ·Ñ Ð¿Ñ€Ð¾Ð²ÐµÑÑ‚Ð¸ ÑÑ€Ð°Ð²Ð½ÐµÐ½Ð¸Ðµ,Ð¿Ð¾Ñ‚Ð¾Ð¼Ñƒ Ñ‡Ñ‚Ð¾ Ð²Ñ‹ Ð²Ñ‹Ð±Ñ€Ð°Ð»Ð¸ Ð¾Ð´Ð½Ñƒ Ð¸ Ñ‚ÑƒÐ¶Ðµ ÑÑ‚Ñ€Ð¾ÐºÑƒ";
 				break;
 			}
 			if (operator<(Array[first - 1], Array[second - 1]))
-				std::cout << "Ñòðîêà " << first << " ìåíüøå ñòðîêè " << second<<"\n";
-			else std::cout << "Ñòðîêà " << first << " áîëüøå ñòðîêè " << second<< "\n";
+				std::cout << "Ð¡Ñ‚Ñ€Ð¾ÐºÐ° " << first << " Ð¼ÐµÐ½ÑŒÑˆÐµ ÑÑ‚Ñ€Ð¾ÐºÐ¸ " << second<<"\n";
+			else std::cout << "Ð¡Ñ‚Ñ€Ð¾ÐºÐ° " << first << " Ð±Ð¾Ð»ÑŒÑˆÐµ ÑÑ‚Ñ€Ð¾ÐºÐ¸ " << second<< "\n";
 			output(Array[first - 1]); output(Array[second - 1]);
 			system("pause");
 			system("CLS");
 			break;
 		case 7:
-			std::cout << "Ââåäèòå íîìåð ñòðîêè, êîòîðóþ õîòèòå ñîðòèðîâàòü \n";
+			std::cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð½Ð¾Ð¼ÐµÑ€ ÑÑ‚Ñ€Ð¾ÐºÐ¸, ÐºÐ¾Ñ‚Ð¾Ñ€ÑƒÑŽ Ñ…Ð¾Ñ‚Ð¸Ñ‚Ðµ ÑÐ¾Ñ€Ñ‚Ð¸Ñ€Ð¾Ð²Ð°Ñ‚ÑŒ \n";
 			number = input_int(0, count + 1);
-			std::cout << "Ñòðîêà " << number << " äî ñîðòèðîâêè\n";
+			std::cout << "Ð¡Ñ‚Ñ€Ð¾ÐºÐ° " << number << " Ð´Ð¾ ÑÐ¾Ñ€Ñ‚Ð¸Ñ€Ð¾Ð²ÐºÐ¸\n";
 			output(Array[number - 1]);
 			buble_sort(Array[number - 1]);
-			std::cout << "Ñòðîêà " << number << " ïîñëå ñîðòèðîâêè\n";
+			std::cout << "Ð¡Ñ‚Ñ€Ð¾ÐºÐ° " << number << " Ð¿Ð¾ÑÐ»Ðµ ÑÐ¾Ñ€Ñ‚Ð¸Ñ€Ð¾Ð²ÐºÐ¸\n";
 			output(Array[number - 1]);
 			system("pause");
 			system("CLS");
 			break;
 		case 8:
-			std::cout << "Ââåäèòå íîìåð ñòðîêè, êîòîðóþ õîòèòå óìåíüøèòü íà 1 \n";
+			std::cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð½Ð¾Ð¼ÐµÑ€ ÑÑ‚Ñ€Ð¾ÐºÐ¸, ÐºÐ¾Ñ‚Ð¾Ñ€ÑƒÑŽ Ñ…Ð¾Ñ‚Ð¸Ñ‚Ðµ ÑƒÐ¼ÐµÐ½ÑŒÑˆÐ¸Ñ‚ÑŒ Ð½Ð° 1 \n";
 			number = input_int(0, count + 1);
-			std::cout << "Ñòðîêà " << number << " äî óìåíüøåíèÿ\n";
+			std::cout << "Ð¡Ñ‚Ñ€Ð¾ÐºÐ° " << number << " Ð´Ð¾ ÑƒÐ¼ÐµÐ½ÑŒÑˆÐµÐ½Ð¸Ñ\n";
 			output(Array[number - 1]);
 			operator--(Array[number - 1]);
-			std::cout << "Ñòðîêà " << number << " ïîñëå óìåíüøåíèÿ\n";
+			std::cout << "Ð¡Ñ‚Ñ€Ð¾ÐºÐ° " << number << " Ð¿Ð¾ÑÐ»Ðµ ÑƒÐ¼ÐµÐ½ÑŒÑˆÐµÐ½Ð¸Ñ\n";
 			output(Array[number - 1]);
 			system("pause");
 			system("CLS");
 			break;
 		case 9:
-			std::cout << "Ââåäèòå íîìåð ñòðîêè, ê êîòîðîé õîòèòå äîáàâèòü ýëåìåíò \n";
+			std::cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð½Ð¾Ð¼ÐµÑ€ ÑÑ‚Ñ€Ð¾ÐºÐ¸, Ðº ÐºÐ¾Ñ‚Ð¾Ñ€Ð¾Ð¹ Ñ…Ð¾Ñ‚Ð¸Ñ‚Ðµ Ð´Ð¾Ð±Ð°Ð²Ð¸Ñ‚ÑŒ ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚ \n";
 			number = input_int(0, count + 1);
-			std::cout << "Ñòðîêà " << number << " äî äîáàâëåíèÿ\n";
+			std::cout << "Ð¡Ñ‚Ñ€Ð¾ÐºÐ° " << number << " Ð´Ð¾ Ð´Ð¾Ð±Ð°Ð²Ð»ÐµÐ½Ð¸Ñ\n";
 			output(Array[number - 1]);
-			std::cout << "Ââåäèòå ýëåìåíò,êîòîðûé õîòèòå äîáàâèòü ";
+			std::cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚,ÐºÐ¾Ñ‚Ð¾Ñ€Ñ‹Ð¹ Ñ…Ð¾Ñ‚Ð¸Ñ‚Ðµ Ð´Ð¾Ð±Ð°Ð²Ð¸Ñ‚ÑŒ ";
 			std::cin >> symbol;
 			operator+=(Array[number - 1], symbol);
-			std::cout << "Ñòðîêà " << number << " ïîñëå äîáàâëåíèÿ\n";
+			std::cout << "Ð¡Ñ‚Ñ€Ð¾ÐºÐ° " << number << " Ð¿Ð¾ÑÐ»Ðµ Ð´Ð¾Ð±Ð°Ð²Ð»ÐµÐ½Ð¸Ñ\n";
 			output(Array[number - 1]);
 			system("pause");
 			system("CLS");
 			break;
 		case 10:
-			std::cout << "Ââåäèòå íîìåð ñòðîêè, ê êîòîðîé õîòèòå äîáàâèòü äðóãóþ ñòðîêó \n";
+			std::cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð½Ð¾Ð¼ÐµÑ€ ÑÑ‚Ñ€Ð¾ÐºÐ¸, Ðº ÐºÐ¾Ñ‚Ð¾Ñ€Ð¾Ð¹ Ñ…Ð¾Ñ‚Ð¸Ñ‚Ðµ Ð´Ð¾Ð±Ð°Ð²Ð¸Ñ‚ÑŒ Ð´Ñ€ÑƒÐ³ÑƒÑŽ ÑÑ‚Ñ€Ð¾ÐºÑƒ \n";
 			 first= input_int(0, count + 1);
-			std::cout << "Ââåäèòå íîìåð ñòðîêè, êîòîðóþ õîòèòå äîáàâèòü \n";
+			std::cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð½Ð¾Ð¼ÐµÑ€ ÑÑ‚Ñ€Ð¾ÐºÐ¸, ÐºÐ¾Ñ‚Ð¾Ñ€ÑƒÑŽ Ñ…Ð¾Ñ‚Ð¸Ñ‚Ðµ Ð´Ð¾Ð±Ð°Ð²Ð¸Ñ‚ÑŒ \n";
 			second = input_int(0, count + 1);
-			std::cout << "Ñòðîêà " << first << " äî äîáàâëåíèÿ\n";
+			std::cout << "Ð¡Ñ‚Ñ€Ð¾ÐºÐ° " << first << " Ð´Ð¾ Ð´Ð¾Ð±Ð°Ð²Ð»ÐµÐ½Ð¸Ñ\n";
 			output(Array[first - 1]);
 			operator+=(Array[first - 1], Array[second - 1]);
-			std::cout << "Ñòðîêà " << first << " ïîñëå äîáàâëåíèÿ\n";
+			std::cout << "Ð¡Ñ‚Ñ€Ð¾ÐºÐ° " << first << " Ð¿Ð¾ÑÐ»Ðµ Ð´Ð¾Ð±Ð°Ð²Ð»ÐµÐ½Ð¸Ñ\n";
 			output(Array[first - 1]);
 			system("pause");
 			system("CLS");
@@ -204,6 +204,7 @@ int main() {
 			break;
 		}
 	}
+	delete[20]Array;
 }
 void output(String& Str) {
 	for (int i = 0; i < Str.size; i++)
@@ -216,7 +217,7 @@ int input_int(int min, int max) {
 	while(!(std::cin>>a)||a>max||a<min){
 	std::cin.clear();
 	std::cin.ignore(std::cin.rdbuf()->in_avail());
-	std::cout << "Ïîâòîðèòå ââîä\n";
+	std::cout << "ÐŸÐ¾Ð²Ñ‚Ð¾Ñ€Ð¸Ñ‚Ðµ Ð²Ð²Ð¾Ð´\n";
 }
 	return a;
 }
@@ -224,7 +225,7 @@ void input_str(String &Str) {
 	Str.string = new char[100];
 	int index(0);
 	char symbol;
-	std::cout << "Ââåäèòå ñòðîêó (×òîáû çàêîí÷èòü ââîä, ââåäèòå 0)\n";
+	std::cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ ÑÑ‚Ñ€Ð¾ÐºÑƒ (Ð§Ñ‚Ð¾Ð±Ñ‹ Ð·Ð°ÐºÐ¾Ð½Ñ‡Ð¸Ñ‚ÑŒ Ð²Ð²Ð¾Ð´, Ð²Ð²ÐµÐ´Ð¸Ñ‚Ðµ 0)\n";
 	std::cin.clear();
 	std::cin.ignore(std::cin.rdbuf()->in_avail());
 	while (true) {
@@ -249,15 +250,15 @@ void buble_sort(String &Str) {
 	}
 }
 void edit_element(String& Str) {
-	std::cout << "Ââåäèòå èíäåêñ ñèìâîëà êîòîðûé õîòèòå ïîìåíÿòü\n";
+	std::cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð¸Ð½Ð´ÐµÐºÑ ÑÐ¸Ð¼Ð²Ð¾Ð»Ð° ÐºÐ¾Ñ‚Ð¾Ñ€Ñ‹Ð¹ Ñ…Ð¾Ñ‚Ð¸Ñ‚Ðµ Ð¿Ð¾Ð¼ÐµÐ½ÑÑ‚ÑŒ\n";
 	int index = input_int(0, Str.size-1);
 	char symbol;
-	std::cout << "Ââåäèòå íîâûé ñèìâîë ";
+	std::cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð½Ð¾Ð²Ñ‹Ð¹ ÑÐ¸Ð¼Ð²Ð¾Ð» ";
 	std::cin >> symbol;
 	Str.string[index-1] = symbol;
 }
 char get_element(String& Str) {
-	std::cout << "Ââåäèòå èíäåêñ ñèìâîëà,êîòîðû õîòèòå âûâåñòè\n";
+	std::cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð¸Ð½Ð´ÐµÐºÑ ÑÐ¸Ð¼Ð²Ð¾Ð»Ð°,ÐºÐ¾Ñ‚Ð¾Ñ€Ñ‹ Ñ…Ð¾Ñ‚Ð¸Ñ‚Ðµ Ð²Ñ‹Ð²ÐµÑÑ‚Ð¸\n";
 	int index = input_int(0, Str.size - 1);
 	return Str.string[index-1];
 }
